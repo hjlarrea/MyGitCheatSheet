@@ -35,19 +35,15 @@ Git ignore files are written using **glob** patterns.
 ---
 
 ## Diff
-To see changes which have not been staged yet: <br/> 
-`git diff`
+To see changes which have not been staged yet: `git diff` 
 
-To see changes that have been already staged: <br/>
-`git diff --staged`
+To see changes that have been already staged: `git diff --staged`
 
 ---
 
 ## Working dir operations
 
-Removing a file from Git: <br/>
-`git rm <file>` <br/>
-On the next commit the file will be gone. No need to do `git add` to stage the change.
+Removing a file from Git: `git rm <file>`. On the next commit the file will be gone. No need to do `git add` to stage the change.
 
 If you want to stop tracking a file but keep the file (for example, installers or logs):
 `git rm --cached <file>`
@@ -68,3 +64,21 @@ git add test.txt
 #7 Commit your changes
 git commit -m "Remove test.txt file."
 ```
+
+To rename a file, use `git mv <originalName> <newName>`.
+
+---
+
+## Git Log
+
+`git log` will provide the full history in reverse chronological order.
+
+|git log|Description|
+|-|-|
+|`-p -2`| Shows last 2 commits and patch information (`git diff` for each of them). `-p` or `-patch` are synonyms. `-#` is also valid for other log commands.|
+|`--stat`|Additional stats per commit.|
+|`--pretty=oneline`| Format the output in 1 line per commit.|
+|`--pretty=format: <format>`| Check this link to see [all available formats](https://git-scm.com/docs/pretty-formats).|
+|`--graph`|Shows a graph of how commits are mapped to branches.|
+
+---
