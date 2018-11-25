@@ -1,6 +1,8 @@
 # Introduction
 
-My personal cheat sheet for Git. This started as a way to keep notes after reading the [Pro Git](https://git-scm.com/book/en/v2) book, and is a work in progress.
+My personal cheat sheet for Git. This started as a way to keep notes after reading [Pro Git](https://git-scm.com/book/en/v2).
+
+This is a work in porgress.
 
 # Chapter 1 - Getting Started
 
